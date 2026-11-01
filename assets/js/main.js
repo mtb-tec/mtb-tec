@@ -107,6 +107,15 @@
     sections.forEach(function (section) { navObserver.observe(section); });
   }
 
+  /* ---------- Porträt: Initialen, solange kein Foto liegt ---------- */
+  document.querySelectorAll('.about-photo img').forEach(function (img) {
+    function markMissing() {
+      if (!img.complete || img.naturalWidth === 0) img.dataset.missing = '1';
+    }
+    if (img.complete) markMissing();
+    else img.addEventListener('error', function () { img.dataset.missing = '1'; });
+  });
+
   /* ---------- Jahr im Footer ---------- */
   var year = document.getElementById('year');
   if (year) year.textContent = String(new Date().getFullYear());
