@@ -20,7 +20,7 @@ Zum Aktivieren nur diese zwei Stellen in `index.html` ersetzen:
 
 1. `FORM_CODE` in `action` durch den Code aus dem Panel (`https://form.taxi/s/…`).
 2. Den Wert von `_next` durch die absolute URL von `danke.html` auf der Live-Domain
-   (aktuell `https://jbelascoain.github.io/mtb-tec/danke.html`).
+   (aktuell `https://mtb-tec.github.io/mtb-tec/danke.html`).
 
 Vorher im [Form.taxi-Panel](https://form.taxi/panel/account/register):
 
@@ -92,19 +92,19 @@ git push -u origin main
 
 Dann im Repository: **Settings → Pages → Source: Deploy from a branch → Branch: `main`, Ordner: `/ (root)` → Save**.
 
-Nach 1–2 Minuten ist die Seite unter `https://jbelascoain.github.io/mtb-tec/` erreichbar.
+Nach 1–2 Minuten ist die Seite unter `https://mtb-tec.github.io/mtb-tec/` erreichbar.
 Alle Links im Projekt sind **relativ**, deshalb funktioniert auch dieser Unterordner ohne Änderungen.
 
-### Variante B – Repository `jbelascoain.github.io` (URL direkt `https://jbelascoain.github.io/`)
+### Variante B – Repository `mtb-tec.github.io` (URL direkt `https://mtb-tec.github.io/`)
 
-Gleiche Schritte, Repository-Name muss exakt `jbelascoain.github.io` heißen.
+Gleiche Schritte, Repository-Name muss exakt `mtb-tec.github.io` heißen.
 
 ### Eigene Domain (optional)
 
 1. Datei `CNAME` im Projektordner anlegen mit einer Zeile: `www.mtb-tec.de`
 2. Beim Domain-Anbieter DNS setzen:
    - `A`-Records für die Hauptdomain (`@`): `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
-   - `CNAME` für `www` → `jbelascoain.github.io`
+   - `CNAME` für `www` → `mtb-tec.github.io`
 3. In GitHub: **Settings → Pages → Custom domain** eintragen, danach **Enforce HTTPS** aktivieren.
 
 ---
@@ -121,7 +121,7 @@ Die Seite enthält bewusst Beispieltexte. Vor dem Livegang alles ersetzen:
 | `info@mtb-tec.de` | index, impressum, datenschutz, Formular-Fallback |
 | `DE123456789` (USt-IdNr.) | impressum.html |
 | `Handwerkskammer Geldern` | impressum.html |
-| `https://jbelascoain.github.io/mtb-tec/` | index (`canonical`, `og:url`, Formular `_next`), sitemap.xml, robots.txt |
+| `https://mtb-tec.github.io/mtb-tec/` | index (`canonical`, `og:url`, Formular `_next`), sitemap.xml, robots.txt |
 | `FORM_CODE` | index.html (Formular-`action`) |
 | Öffnungszeiten, Zahlen (15+ Jahre, 850+, 4,9/5) | index.html |
 | Referenzen | index.html |
