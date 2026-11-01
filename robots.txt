@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mtb-tec.github.io/mtb-tec/sitemap.xml
+Sitemap: https://mtb-tec.de/sitemap.xml
